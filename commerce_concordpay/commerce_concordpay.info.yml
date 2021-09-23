@@ -1,12 +1,17 @@
-name: Commerce Concord Pay
+name: Commerce ConcordPay Payment
 type: module
-description: Provides Commerce integration for the Concord Pay Gateway.
+description: 'Provides Commerce integration for the ConcordPay Payment Gateway (Off-site redirect).'
 package: Commerce
 dependencies:
-  - commerce:commerce	
-  - commerce:commerce_payment
+  - commerce:commerce (>=8.x-2.0)
+  - commerce:commerce_payment (>=8.x-2.0)
+core: 8.x
+core_version_requirement: ^8 || ^9
+configure: commerce_payment.configuration
+hidden: false
+'interface translation project': commerce_concordpay
+'interface translation server pattern': modules/%project/translations/%language.po
 
-version: '8.x-1.0'
-core: '8.x'
+version: '1.0.2'
 project: 'commerce_concordpay'
-datestamp: 1499960649
+datestamp: 1623049719
